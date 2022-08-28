@@ -51,4 +51,20 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  storybook: {
+    stories: ['~/src/components/**/*.stories.js'],
+    addons: ['@storybook/addon-controls', '@storybook/addon-notes'],
+    port: 5555,
+    decorators: [],
+    parameters: {
+      backgrounds: {
+        default: 'light',
+      },
+      controls: {
+        expanded: true,
+      },
+      layout: 'full',
+    },
+  },
 }
