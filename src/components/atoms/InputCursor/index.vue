@@ -12,7 +12,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @use '../../../styles/mixins/index' as m;
-@use '../../../styles/animations/flush';
 
 .cursor {
   width: 1px;
