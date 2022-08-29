@@ -64,7 +64,6 @@ export default {
       controls: {
         expanded: true,
       },
-      layout: 'full',
     },
   },
 }
