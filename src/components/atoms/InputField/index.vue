@@ -62,18 +62,16 @@ export default defineComponent({
 
       chars.value.push({
         value: 'X',
-        position: {
-          x: position.value.x,
-          y: 0,
-        },
+        position: { x: position.value.x, y: 0 },
         disabled: false,
       })
     }
 
     function erase(x: number, y: number) {
       const char = chars.value.find(
-        (c) => c.position.x === x && c.position.y === y
+        (c) => !c.disabled && c.position.x === x && c.position.y === y
       )
+
       if (!char) return
       char.value = ''
     }
