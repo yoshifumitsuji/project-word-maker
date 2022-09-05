@@ -5,14 +5,7 @@
 </template>
 
 <script lang="ts">
-import {
-  defineComponent,
-  onMounted,
-  ref,
-  toRefs,
-  PropType,
-  watchEffect,
-} from 'vue'
+import { defineComponent, onMounted, ref, toRefs, PropType, watch } from 'vue'
 
 import { Position } from '../../../types'
 
@@ -36,8 +29,8 @@ export default defineComponent({
     const down = () => {
       y.value = `${position.value.y * 1.5}em`
     }
-    onMounted(() => setTimeout(() => down(), 100))
-    watchEffect(() => down())
+    onMounted(() => setTimeout(() => down(), 300))
+    watch(position, () => down())
     return { x, y }
   },
 })
