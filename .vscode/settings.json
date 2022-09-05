@@ -1,5 +1,5 @@
 {
-  "stylelint.validate": ["css", "scss"],
+  "stylelint.validate": ["css", "scss", "vue"],
   "scss.validate": false,
   "css.validate": false,
   "editor.formatOnSave": true,
@@ -8,6 +8,5 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
     "source.addMissingImports": true
-  },
-  "cSpell.words": ["favicons", "msapplication", "ress"]
+  }
 }
