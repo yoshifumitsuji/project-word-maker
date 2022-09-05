@@ -13,7 +13,21 @@
     "prettier"
   ],
   "plugins": ["unused-imports"],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "root": ".",
+        "alias": {
+          "~": "./src",
+          "@": "./src",
+          "~~": ".",
+          "@@": "."
+        }
+      }
+    }
+  },
   "rules": {
+    "unused-imports/no-unused-imports": "error",
     "import/order": [
       "error",
       {
@@ -45,7 +59,6 @@
           }
         ]
       }
-    ],
-    "unused-imports/no-unused-imports": "error"
+    ]
   }
 }
