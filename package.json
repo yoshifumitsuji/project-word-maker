@@ -14,7 +14,9 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix",
     "prepare": "husky install",
     "test": "jest",
-    "storybook": "yarn nuxt storybook"
+    "storybook": "yarn nuxt storybook",
+    "build-storybook": "yarn nuxt storybook build",
+    "chromatic": "yarn chromatic --project-token=c03e8d674f6a"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --cache",
