@@ -3832,10 +3832,14 @@
     "@vue/babel-plugin-transform-vue-jsx" "^1.4.0"
     camelcase "^5.0.0"
 
-"@vue/compat@^3.2.39":
-  version "3.2.39"
-  resolved "https://registry.yarnpkg.com/@vue/compat/-/compat-3.2.39.tgz#66e0e44847e53b6d9cf66fc9af35ea07c35a425b"
-  integrity sha512-REzFzFRhJW0zl7Wn4Ulexr7rbMNmtwF7O2HYX1icJ8qEOgOBbzPrOT5bPc+qg7H/K4ynKdPKaByBABPkDXhlKA==
+"@vue/compat@^3.2.40":
+  version "3.2.40"
+  resolved "https://registry.yarnpkg.com/@vue/compat/-/compat-3.2.40.tgz#5ffa8999121daaff585eea1dce0352580e562bfd"
+  integrity sha512-PZl6tsjWC2KENXfeJ+hI+wbvN7lgLBVyf6fgE1bybxUtfDcw/Eon3RrapEHnp86zuZU++ThGqq1U03ZacznR0g==
+  dependencies:
+    "@babel/parser" "^7.16.4"
+    estree-walker "^2.0.2"
+    source-map "^0.6.1"
 
 "@vue/compiler-core@3.2.37":
   version "3.2.37"
